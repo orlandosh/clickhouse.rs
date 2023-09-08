@@ -365,7 +365,7 @@ impl AsyncInsertOptions {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 enum OptionValue<T> {
     Unspecified,
     Specified(T),
